@@ -1,22 +1,22 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import '../styles/global.css';
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Soul Space – Terapia Psicológica Integral</title>
+  </head>
+  <body class="bg-gradient-to-b from-pink-50 to-purple-50 text-gray-800 font-sans min-h-screen flex flex-col">
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="bg-purple-700 text-white text-center py-6 mt-10">
+      <p>&copy; 2025 Soul Space – Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
