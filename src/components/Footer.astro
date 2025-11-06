@@ -1,7 +1,79 @@
-<footer class="bg-white text-gray-700 text-center py-10 border-t border-[--color-accent-200] shadow-inner">
-  <div class="flex flex-col items-center gap-2">
-    <p class="text-sm">&copy; 2025 <span class="text-[--color-accent-600] font-semibold">Soul Space</span></p>
-    <p class="text-xs text-gray-500">Terapia psicológica integral para tu bienestar emocional</p>
+<footer
+  class="relative bg-gradient-to-b from-purple-200 via-purple-300/60 to-purple-400/30 text-gray-800 text-center pt-14 pb-6 border-t border-purple-200 shadow-inner overflow-hidden"
+>
+  <!-- Círculos difuminados -->
+  <div
+    class="absolute -top-32 left-1/4 w-[360px] h-[360px] bg-purple-200/40 blur-[100px] rounded-full pointer-events-none"
+  ></div>
+  <div
+    class="absolute -bottom-32 right-1/4 w-[360px] h-[360px] bg-pink-200/40 blur-[100px] rounded-full pointer-events-none"
+  ></div>
 
+  <!-- Contenido -->
+  <div class="relative z-10 flex flex-col items-center space-y-4">
+    <!-- Logo -->
+    <img
+      src="/src/assets/logo.jpeg"
+      alt="Soul Space logo"
+      class="w-16 h-16 rounded-full shadow-md ring-2 ring-white/70 ring-offset-2 ring-offset-purple-100 object-cover mb-2"
+      loading="lazy"
+    />
+
+    <h3 class="text-base font-semibold tracking-wide text-gray-800">
+      © 2025 <span class="text-purple-700 font-bold">Soul Space</span>
+    </h3>
+
+    <p class="text-sm text-gray-700">
+      Terapia psicológica integral para tu bienestar emocional.
+    </p>
+
+    <!-- Línea decorativa -->
+    <div
+      class="w-24 h-[2px] bg-gradient-to-r from-purple-500 via-pink-400 to-purple-500 rounded-full my-2"
+    ></div>
+
+    <!-- Redes sociales -->
+    <div class="flex justify-center gap-6 pt-1">
+      <a
+        href="https://wa.me/527711996332"
+        target="_blank"
+        aria-label="WhatsApp"
+        class="text-gray-600 hover:text-green-500 transition-colors duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20.52 3.48A11.79 11.79 0 0 0 12 0 11.82 11.82 0 0 0 .25 12.3L0 24l11.82-3.14A11.84 11.84 0 0 0 24 12a11.73 11.73 0 0 0-3.48-8.52zM12 21.5a9.37 9.37 0 0 1-4.67-1.26l-.33-.19-4.27 1.13 1.14-4.16-.21-.34A9.47 9.47 0 0 1 2.5 12 9.51 9.51 0 1 1 12 21.5zm5.21-6.89c-.29-.15-1.74-.86-2-1s-.47-.15-.67.15-.77 1-.94 1.21-.35.23-.64.08a7.64 7.64 0 0 1-2.25-1.38 8.45 8.45 0 0 1-1.56-1.92c-.16-.27 0-.42.12-.57s.27-.34.4-.52a1.79 1.79 0 0 0 .27-.45.51.51 0 0 0 0-.49c-.08-.15-.67-1.61-.92-2.21s-.49-.5-.67-.51h-.57a1.11 1.11 0 0 0-.8.38 3.36 3.36 0 0 0-1.05 2.51 5.86 5.86 0 0 0 1.25 3.1 13.25 13.25 0 0 0 5.1 4.46 12.3 12.3 0 0 0 1.23.45 3 3 0 0 0 1.39.09 3.15 3.15 0 0 0 2.06-1.48 2.62 2.62 0 0 0 .19-1.48c-.08-.13-.26-.21-.55-.36z"
+          />
+        </svg>
+      </a>
+
+      <a
+        href="https://www.instagram.com/soul_space.098"
+        target="_blank"
+        aria-label="Instagram"
+        class="text-gray-600 hover:text-pink-500 transition-colors duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 9A3.5 3.5 0 1 1 15.5 13 3.5 3.5 0 0 1 12 16.5zm4.75-9.75a1 1 0 1 1 1 1 1 1 0 0 1-1-1z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Créditos -->
+    <p class="text-xs text-gray-500 mt-4 mb-2">
+      Desarrollado con ❤️ en Pachuca, Hidalgo
+    </p>
   </div>
 </footer>
