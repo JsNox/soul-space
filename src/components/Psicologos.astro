@@ -1,23 +1,135 @@
-<section id="psicologos" class="py-16 bg-[--color-accent-100] text-center">
-  <h2 class="text-3xl font-bold text-[--color-accent-700] mb-10">Conoce a nuestras psicólogas</h2>
+<section
+  id="psicologos"
+  class="relative py-28 text-center bg-gradient-to-b from-purple-50 via-pink-50 to-white overflow-hidden"
+>
+  <!-- decoraciones difuminadas -->
+  <div
+    class="absolute -top-40 left-0 w-[480px] h-[480px] bg-[#e9d5ff]/40 blur-[120px] rounded-full pointer-events-none"
+  ></div>
+  <div
+    class="absolute -bottom-40 right-0 w-[420px] h-[420px] bg-[#fbcfe8]/30 blur-[120px] rounded-full pointer-events-none"
+  ></div>
 
-  <div class="grid md:grid-cols-3 gap-8 px-6">
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-      <img src="/img/psicologa1.jpg" alt="Psicóloga Ana" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
-      <h3 class="text-xl font-semibold text-[--color-accent-700]">Mtra. Ana López</h3>
-      <p class="text-gray-600 text-sm mt-2">Terapia cognitivo-conductual | 5 años de experiencia</p>
-    </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <!-- Encabezado -->
+    <h2 class="text-4xl font-extrabold text-gray-700 mb-5">
+      Conoce a nuestro equipo
+    </h2>
+    <p class="text-gray-600 mb-16 max-w-2xl mx-auto leading-relaxed">
+      Un grupo de psicólogas y psicólogos certificados, comprometidos con tu
+      bienestar emocional y crecimiento personal.
+    </p>
 
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-      <img src="/img/psicologa2.jpg" alt="Psicóloga Laura" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
-      <h3 class="text-xl font-semibold text-[--color-accent-700]">Lic. Laura Méndez</h3>
-      <p class="text-gray-600 text-sm mt-2">Terapia humanista | Enfoque en autoestima y relaciones</p>
-    </div>
+    <!-- Grid adaptable -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 place-items-center">
+      <!-- Tarjeta -->
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/HannaCampos.jpeg"
+          alt="Mtra. Hanna Campos"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">
+          Mtra. Hanna Campos
+        </h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Terapia cognitivo-conductual • 6 años de experiencia
+        </p>
+      </div>
 
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-      <img src="/img/psicologa3.jpg" alt="Psicóloga Sofía" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
-      <h3 class="text-xl font-semibold text-[--color-accent-700]">Psic. Sofía Ramírez</h3>
-      <p class="text-gray-600 text-sm mt-2">Terapia sistémica | Especialista en comunicación familiar</p>
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/KarlaSanabria.jpeg"
+          alt="Lic. Karla Sanabria"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">Lic. Karla Sanabria</h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Enfoque humanista • Terapia de pareja y autoestima
+        </p>
+      </div>
+
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/LilianaGarrido.jpeg"
+          alt="Psic. Liliana Garrido"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">
+          Psic. Liliana Garrido
+        </h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Terapia sistémica • Comunicación familiar
+        </p>
+      </div>
+
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/LizethAlarcon.jpeg"
+          alt="Lic. Lizeth Alarcón"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">
+          Lic. Lizeth Alarcón
+        </h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Psicoterapia breve • Manejo de ansiedad
+        </p>
+      </div>
+
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/MiriamArciga.jpeg"
+          alt="Mtra. Miriam Arciga"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">Mtra. Miriam Arciga</h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Terapia integrativa • Inteligencia emocional
+        </p>
+      </div>
+
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/VereniceCisneros.jpeg"
+          alt="Psic. Verenice Cisneros"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">
+          Psic. Verenice Cisneros
+        </h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Enfoque centrado en la persona • Acompañamiento empático
+        </p>
+      </div>
+
+      <div
+        class="group bg-white/70 backdrop-blur-md p-8 w-full max-w-sm rounded-3xl shadow-md hover:shadow-xl border border-purple-100 transition-all duration-300 hover:-translate-y-2"
+      >
+        <img
+          src="/src/assets/psicologos/XochCruz.jpeg"
+          alt="Psic. Xochitl Cruz"
+          class="w-36 h-36 mx-auto rounded-full object-cover shadow-md mb-5 transition-transform duration-300 group-hover:scale-105"
+        />
+        <h3 class="text-xl font-semibold text-[#6d28d9]">
+          Psic. Xochitl Cruz
+        </h3>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Enfoque humanista • Procesos de desarrollo personal
+        </p>
+      </div>
     </div>
   </div>
 </section>
