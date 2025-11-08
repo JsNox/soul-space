@@ -1,15 +1,168 @@
-<section id="faq" class="py-16 bg-white text-center">
-  <h2 class="text-3xl font-bold text-[--color-accent-700] mb-10">Preguntas frecuentes</h2>
+<section
+  id="faq"
+  class="relative py-28 bg-gradient-to-b from-white via-purple-50 to-pink-50 text-center overflow-hidden"
+>
+  <!-- decoraciones difuminadas -->
+  <div
+    class="absolute -top-40 -left-40 w-[420px] h-[420px] bg-purple-200/40 blur-[100px] rounded-full pointer-events-none"
+  ></div>
+  <div
+    class="absolute -bottom-40 right-0 w-[380px] h-[380px] bg-pink-200/40 blur-[100px] rounded-full pointer-events-none"
+  ></div>
 
-  <div class="max-w-3xl mx-auto text-left space-y-4">
-    <details class="bg-[--color-primary-100] p-4 rounded-lg">
-      <summary class="font-semibold text-[--color-accent-700] cursor-pointer">¿Las sesiones son confidenciales?</summary>
-      <p class="mt-2 text-gray-600">Sí, todas las sesiones son totalmente confidenciales y se realizan bajo el código ético profesional.</p>
-    </details>
+  <div class="relative z-10 max-w-3xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-gray-700 mb-5">
+      Preguntas frecuentes
+    </h2>
+    <p class="text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+      Aquí encontrarás respuestas a las dudas más comunes sobre nuestras terapias, duración, precios y forma de trabajo.
+    </p>
 
-    <details class="bg-[--color-primary-100] p-4 rounded-lg">
-      <summary class="font-semibold text-[--color-accent-700] cursor-pointer">¿Cuánto dura cada sesión?</summary>
-      <p class="mt-2 text-gray-600">Cada sesión tiene una duración aproximada de 50 minutos.</p>
-    </details>
+    <div class="text-left space-y-5">
+      <!-- Pregunta 1 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Las sesiones son confidenciales?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Sí, todas las sesiones son completamente confidenciales y se realizan
+          bajo el código ético profesional de la psicología.
+        </p>
+      </details>
+
+      <!-- Pregunta 2 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Cuál es la duración de cada sesión?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Las sesiones tienen una duración aproximada de
+          <strong>45 minutos a 1 hora</strong>, dependiendo de las necesidades
+          del proceso terapéutico.
+        </p>
+      </details>
+
+      <!-- Pregunta 3 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Cuáles son los precios de las sesiones?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Los precios dependen del tipo de terapia:
+        </p>
+        <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
+          <li>Terapia individual: <strong>$210 MXN</strong></li>
+          <li>Terapia de pareja: <strong>$290 MXN</strong></li>
+          <li>Terapia familiar: <strong>$370 MXN</strong></li>
+        </ul>
+      </details>
+
+      <!-- Pregunta 4 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Qué enfoques terapéuticos manejan?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
+          <li>Cognitivo-conductual</li>
+          <li>Humanista</li>
+          <li>Sistémico</li>
+          <li>Psicoanálisis</li>
+          <li>Educativa</li>
+        </ul>
+      </details>
+
+      <!-- Pregunta 5 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Las sesiones son presenciales o en línea?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Actualmente trabajamos ambas modalidades, cabe destacar que
+          <strong>en línea</strong>, se brinda la misma calidad de atención y
+          acompañamiento que en una consulta presencial.
+        </p>
+      </details>
+
+      <!-- Pregunta 6 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Cómo puedo agendar una sesión?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Puedes agendar directamente desde nuestra sección
+          <a href="#contacto" class="text-purple-600 font-medium underline"
+            >Contacto</a
+          >
+          o enviándonos un mensaje por WhatsApp. Te ayudaremos a coordinar la
+          fecha y hora que mejor se adapten a ti.
+        </p>
+      </details>
+
+      <!-- Pregunta 7 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Qué pasa si necesito cancelar una cita?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Puedes cancelar o reagendar tu sesión avisando con al menos
+          <strong>12 horas de anticipación</strong> para respetar el tiempo del
+          terapeuta y mantener una agenda ordenada.
+        </p>
+      </details>
+
+      <!-- Pregunta 8 -->
+      <details
+        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
+      >
+        <summary
+          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+        >
+          ¿Puedo elegir a mi psicóloga?
+          <span class="transition-transform group-open:rotate-180">⌄</span>
+        </summary>
+        <p class="mt-2 text-gray-700 leading-relaxed">
+          Sí. Puedes revisar nuestro
+          <a href="#psicologos" class="text-purple-600 font-medium underline"
+            >equipo de psicólogas</a
+          >
+          y elegir con quién te sientas más cómodo o cómoda.
+        </p>
+      </details>
+    </div>
   </div>
 </section>
