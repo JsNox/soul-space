@@ -1,114 +1,169 @@
 <section
-  class="relative flex flex-col items-center justify-center text-center py-28 px-6 overflow-x-hidden bg-gradient-to-b from-pink-50 via-purple-50 to-white"
+  class="relative overflow-hidden bg-[radial-gradient(circle_at_8%_12%,rgba(20,184,166,0.15),transparent_40%),radial-gradient(circle_at_92%_18%,rgba(251,113,133,0.2),transparent_35%),linear-gradient(to_bottom,#fff7ed,#fdf2f8_45%,#ffffff)] px-6 py-20 md:py-28"
 >
-  <!-- Círculo decorativo difuminado -->
   <div
-    class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-200 opacity-40 blur-[120px] rounded-full pointer-events-none"
+    class="pointer-events-none absolute -left-20 top-10 h-64 w-64 rounded-full bg-teal-200/30 blur-3xl"
+  ></div>
+  <div
+    class="pointer-events-none absolute -right-24 top-24 h-72 w-72 rounded-full bg-rose-200/40 blur-3xl"
   ></div>
 
-  <!-- Logo centrado -->
-  <div
-    class="relative z-10 w-44 h-44 mb-8 rounded-full overflow-hidden shadow-lg ring-4 ring-white/70 ring-offset-2 ring-offset-purple-50 animate-fade-in"
-  >
-    <img
-      src="/logo.jpeg"
-      alt="Soul Space Consultorio Psicológico"
-      class="w-full h-full object-cover"
-      loading="lazy"
-    />
-  </div>
-
-  <!-- Título -->
-  <h1
-    class="relative z-10 text-5xl md:text-6xl font-extrabold text-gray-800 mb-6 tracking-tight drop-shadow-sm"
-  >
-    Soul <span class="text-purple-400">Space</span>
-  </h1>
-
-  <!-- Descripción -->
-  <p
-    class="relative z-10 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed"
-  >
-    Un espacio para sanar, reconectar y crecer emocionalmente con apoyo
-    profesional y humano.
-  </p>
-
-  <div class="mb-20">
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">
-        ¿Por qué elegir Soul Space?
-      </h3>
-      <p class="max-w-3xl mx-auto text-gray-600 mb-10 leading-relaxed">
-        Nuestro enfoque combina la calidez humana con la profesionalidad clínica.
-        Cada sesión está diseñada para acompañarte con empatía, escucha activa y
-        herramientas prácticas que te ayudarán a recuperar el equilibrio emocional
-        y mejorar tu calidad de vida.
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div
-          class="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-md hover:-translate-y-1 border border-purple-100 transition-all"
+  <div class="relative z-10 mx-auto max-w-6xl">
+    <div class="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="text-center lg:text-left">
+        <p
+          class="inline-flex items-center gap-2 rounded-full border border-rose-200/70 bg-white/80 px-4 py-1.5 text-sm font-semibold text-rose-700 shadow-sm backdrop-blur"
         >
-          <h4 class="font-semibold text-purple-700 mb-3 text-lg">
-            ✨ Terapia accesible
-          </h4>
-          <p class="text-gray-600">
-            Creemos que cuidar tu mente no debería ser un lujo. Ofrecemos sesiones
-            en línea con precios justos y psicólogas certificadas.
-          </p>
+          Psicoterapia en línea con enfoque humano
+        </p>
+
+        <h1
+          class="mt-6 text-5xl font-black leading-[1.08] text-gray-900 md:text-6xl lg:text-7xl"
+        >
+          Cuidar tu mente
+          <span
+            class="block bg-gradient-to-r from-rose-500 via-fuchsia-500 to-teal-500 bg-clip-text text-transparent"
+          >
+            también es prioridad
+          </span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-700 lg:mx-0">
+          En Soul Space te acompañamos a sanar, reconectar y crecer con sesiones
+          cercanas, prácticas y adaptadas a tu proceso.
+        </p>
+
+        <div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
+          <a
+            href="#contacto"
+            class="rounded-full bg-gray-900 px-8 py-3 text-base font-semibold text-white shadow-lg shadow-gray-900/20 transition duration-200 hover:-translate-y-0.5 hover:bg-gray-800"
+          >
+            Agenda tu sesión
+          </a>
+          <a
+            href="#servicios"
+            class="rounded-full border border-gray-300 bg-white/90 px-8 py-3 text-base font-semibold text-gray-800 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-teal-300 hover:bg-teal-50"
+          >
+            Ver servicios
+          </a>
         </div>
 
-        <div
-          class="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-md hover:-translate-y-1 border border-purple-100 transition-all"
-        >
-          <h4 class="font-semibold text-purple-700 mb-3 text-lg">
-            🫶 Enfoque humano
-          </h4>
-          <p class="text-gray-600">
-            Te acompañamos sin juicios, respetando tu historia, tus emociones y tu
-            ritmo de crecimiento personal.
-          </p>
-        </div>
-
-        <div
-          class="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-md hover:-translate-y-1 border border-purple-100 transition-all"
-        >
-          <h4 class="font-semibold text-purple-700 mb-3 text-lg">
-            🌱 Crecimiento real
-          </h4>
-          <p class="text-gray-600">
-            Más que superar una crisis, buscamos ayudarte a construir bienestar
-            emocional duradero y consciente.
-          </p>
+        <div class="mt-10 grid grid-cols-3 gap-4 text-left">
+          <article
+            class="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm backdrop-blur reveal-up"
+          >
+            <p class="text-2xl font-extrabold text-gray-900">+350</p>
+            <p class="text-sm text-gray-600">Sesiones acompañadas</p>
+          </article>
+          <article
+            class="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm backdrop-blur reveal-up [animation-delay:120ms]"
+          >
+            <p class="text-2xl font-extrabold text-gray-900">8</p>
+            <p class="text-sm text-gray-600">Especialistas en el equipo</p>
+          </article>
+          <article
+            class="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm backdrop-blur reveal-up [animation-delay:240ms]"
+          >
+            <p class="text-2xl font-extrabold text-gray-900">100%</p>
+            <p class="text-sm text-gray-600">Atención personalizada</p>
+          </article>
         </div>
       </div>
+
+      <aside class="relative mx-auto w-full max-w-md float-soft">
+        <div
+          class="absolute inset-0 -rotate-3 rounded-[2rem] bg-gradient-to-br from-rose-200/70 to-teal-200/60 blur-sm"
+        ></div>
+        <div
+          class="relative rounded-[2rem] border border-white/80 bg-white/80 p-8 shadow-xl backdrop-blur-md"
+        >
+          <div
+            class="mx-auto mb-5 h-24 w-24 overflow-hidden rounded-full ring-4 ring-rose-100"
+          >
+            <img
+              src="/logo.jpeg"
+              alt="Soul Space Consultorio Psicológico"
+              class="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h2 class="text-center text-2xl font-bold text-gray-900">Soul Space</h2>
+          <p class="mt-2 text-center text-gray-600">
+            Tu espacio seguro para transformar tu bienestar emocional.
+          </p>
+
+          <ul class="mt-7 space-y-3 text-left text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-teal-500"></span>
+              Sesiones online individuales, de pareja y familiar.
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-rose-500"></span>
+              Enfoque clínico con acompañamiento cercano y sin juicio.
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-fuchsia-500"></span>
+              Horarios flexibles y atención rápida por WhatsApp.
+            </li>
+          </ul>
+        </div>
+      </aside>
     </div>
 
-  <!-- Botones -->
-  <div
-    class="relative z-10 flex flex-col sm:flex-row gap-4 justify-center"
-  >
-    <!-- Botón principal -->
-    <a
-      href="#contacto"
-      class="bg-purple-400 text-white px-8 py-3 rounded-full font-medium shadow-md hover:bg-purple-600 active:bg-purple-700 transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-300"
-    >
-      Agenda tu sesión
-    </a>
+    <div class="mt-20">
+      <h3 class="text-center text-3xl font-extrabold text-gray-900">
+        Por qué elegir Soul Space
+      </h3>
+      <p class="mx-auto mt-4 max-w-3xl text-center leading-relaxed text-gray-600">
+        Combinamos calidez humana y profesionalidad clínica para que cada sesión
+        te ayude a avanzar con herramientas reales y sostenibles.
+      </p>
 
-    <!-- Botón secundario -->
-    <a
-      href="#servicios"
-      class="border border-purple-300 text-purple-700 px-8 py-3 rounded-full font-medium hover:bg-purple-100 hover:border-purple-400 active:bg-purple-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-purple-200"
-    >
-      Conoce nuestros servicios
-    </a>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article
+          class="rounded-3xl border border-rose-100 bg-white/85 p-7 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+          <p class="text-sm font-semibold uppercase tracking-wide text-rose-600">
+            Accesible
+          </p>
+          <h4 class="mt-2 text-xl font-bold text-gray-900">Terapia cercana</h4>
+          <p class="mt-3 text-gray-600">
+            Precios justos y acompanamiento profesional para que iniciar terapia
+            sea una decisión posible.
+          </p>
+        </article>
+
+        <article
+          class="rounded-3xl border border-teal-100 bg-white/85 p-7 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+          <p class="text-sm font-semibold uppercase tracking-wide text-teal-700">
+            Humano
+          </p>
+          <h4 class="mt-2 text-xl font-bold text-gray-900">Escucha activa</h4>
+          <p class="mt-3 text-gray-600">
+            Respetamos tu historia y tu ritmo con un espacio seguro, empático y
+            enfocado en tu bienestar.
+          </p>
+        </article>
+
+        <article
+          class="rounded-3xl border border-fuchsia-100 bg-white/85 p-7 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+          <p class="text-sm font-semibold uppercase tracking-wide text-fuchsia-700">
+            Transformador
+          </p>
+          <h4 class="mt-2 text-xl font-bold text-gray-900">Crecimiento real</h4>
+          <p class="mt-3 text-gray-600">
+            No solo atendemos crisis. Te ayudamos a construir equilibrio
+            emocional duradero en tu vida diaria.
+          </p>
+        </article>
+      </div>
+    </div>
   </div>
 
-  
-
-
-  <!-- Degradado inferior -->
   <div
-    class="absolute bottom-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none"
+    class="pointer-events-none absolute bottom-0 h-40 w-full bg-gradient-to-t from-white to-transparent"
   ></div>
 </section>

@@ -1,168 +1,88 @@
+---
+const faqs = [
+  {
+    question: "¿Las sesiones son confidenciales?",
+    answer:
+      "Sí. Todas las sesiones son completamente confidenciales y se llevan bajo el código ético profesional de psicología.",
+  },
+  {
+    question: "¿Cuál es la duración de cada sesión?",
+    answer:
+      "Cada sesión dura entre 45 minutos y 1 hora, según las necesidades del proceso terapéutico.",
+  },
+  {
+    question: "¿Cuáles son los precios de las sesiones?",
+    answer:
+      "Terapia individual: $210 MXN, terapia de pareja: $290 MXN y terapia familiar: $370 MXN.",
+  },
+  {
+    question: "¿Qué enfoques terapéuticos manejan?",
+    answer:
+      "Trabajamos desde enfoques cognitivo-conductual, humanista, sistémico, psicoanalítico y educativo.",
+  },
+  {
+    question: "¿Las sesiones son presenciales o en línea?",
+    answer:
+      "Actualmente ofrecemos ambas modalidades. En línea mantenemos la misma calidad de atención y acompañamiento clínico.",
+  },
+  {
+    question: "¿Cómo puedo agendar una sesión?",
+    answer:
+      "Puedes agendar desde la sección de contacto o escribirnos por WhatsApp para ayudarte a elegir fecha y horario.",
+  },
+  {
+    question: "¿Qué pasa si necesito cancelar una cita?",
+    answer:
+      "Puedes cancelar o reagendar con al menos 12 horas de anticipación para respetar la agenda terapéutica.",
+  },
+  {
+    question: "¿Puedo elegir a mi psicóloga o psicólogo?",
+    answer:
+      "Sí. Puedes revisar el equipo y elegir al especialista con quien te sientas más cómodo para iniciar tu proceso.",
+  },
+];
+---
+
 <section
   id="faq"
-  class="relative py-28 bg-gradient-to-b from-white via-purple-50 to-pink-50 text-center overflow-hidden"
+  class="relative overflow-hidden bg-[radial-gradient(circle_at_14%_20%,rgba(251,113,133,0.13),transparent_35%),radial-gradient(circle_at_88%_14%,rgba(45,212,191,0.14),transparent_35%),linear-gradient(to_bottom,#ffffff,#fdf2f8_45%,#ecfeff)] py-24 md:py-28"
 >
-  <!-- decoraciones difuminadas -->
-  <div
-    class="absolute -top-40 -left-40 w-[420px] h-[420px] bg-purple-200/40 blur-[100px] rounded-full pointer-events-none"
-  ></div>
-  <div
-    class="absolute -bottom-40 right-0 w-[380px] h-[380px] bg-pink-200/40 blur-[100px] rounded-full pointer-events-none"
-  ></div>
+  <div class="pointer-events-none absolute -left-20 top-16 h-64 w-64 rounded-full bg-rose-200/40 blur-3xl"></div>
+  <div class="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-teal-200/40 blur-3xl"></div>
 
-  <div class="relative z-10 max-w-3xl mx-auto px-6">
-    <h2 class="text-4xl font-extrabold text-gray-700 mb-5">
-      Preguntas frecuentes
-    </h2>
-    <p class="text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-      Aquí encontrarás respuestas a las dudas más comunes sobre nuestras terapias, duración, precios y forma de trabajo.
-    </p>
+  <div class="relative z-10 mx-auto max-w-4xl px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="inline-flex rounded-full border border-rose-200/70 bg-white/75 px-4 py-1.5 text-sm font-semibold text-rose-700">
+        Preguntas frecuentes
+      </p>
+      <h2 class="mt-5 text-4xl font-black text-gray-900 md:text-5xl">Resolvemos tus dudas antes de iniciar</h2>
+      <p class="mt-4 text-lg leading-relaxed text-gray-700">
+        Lo más importante para comenzar terapia es sentir claridad y confianza. Aquí tienes respuestas rápidas a lo más común.
+      </p>
+    </div>
 
-    <div class="text-left space-y-5">
-      <!-- Pregunta 1 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
+    <div class="mt-12 space-y-4">
+      {faqs.map((item, index) => (
+        <details
+          class="group rounded-2xl border border-white/80 bg-white/85 p-5 shadow-sm backdrop-blur transition duration-200 hover:shadow-md reveal-up"
+          style={`animation-delay:${index * 60}ms;`}
         >
-          ¿Las sesiones son confidenciales?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Sí, todas las sesiones son completamente confidenciales y se realizan
-          bajo el código ético profesional de la psicología.
-        </p>
-      </details>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-lg font-bold text-gray-900">
+            {item.question}
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-rose-100 text-rose-700 transition-transform duration-200 group-open:rotate-180">
+              ˅
+            </span>
+          </summary>
+          <p class="mt-3 leading-relaxed text-gray-700">{item.answer}</p>
+        </details>
+      ))}
+    </div>
 
-      <!-- Pregunta 2 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Cuál es la duración de cada sesión?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Las sesiones tienen una duración aproximada de
-          <strong>45 minutos a 1 hora</strong>, dependiendo de las necesidades
-          del proceso terapéutico.
-        </p>
-      </details>
-
-      <!-- Pregunta 3 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Cuáles son los precios de las sesiones?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Los precios dependen del tipo de terapia:
-        </p>
-        <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
-          <li>Terapia individual: <strong>$210 MXN</strong></li>
-          <li>Terapia de pareja: <strong>$290 MXN</strong></li>
-          <li>Terapia familiar: <strong>$370 MXN</strong></li>
-        </ul>
-      </details>
-
-      <!-- Pregunta 4 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Qué enfoques terapéuticos manejan?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
-          <li>Cognitivo-conductual</li>
-          <li>Humanista</li>
-          <li>Sistémico</li>
-          <li>Psicoanálisis</li>
-          <li>Educativa</li>
-        </ul>
-      </details>
-
-      <!-- Pregunta 5 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Las sesiones son presenciales o en línea?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Actualmente trabajamos ambas modalidades, cabe destacar que
-          <strong>en línea</strong>, se brinda la misma calidad de atención y
-          acompañamiento que en una consulta presencial.
-        </p>
-      </details>
-
-      <!-- Pregunta 6 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Cómo puedo agendar una sesión?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Puedes agendar directamente desde nuestra sección
-          <a href="#contacto" class="text-purple-600 font-medium underline"
-            >Contacto</a
-          >
-          o enviándonos un mensaje por WhatsApp. Te ayudaremos a coordinar la
-          fecha y hora que mejor se adapten a ti.
-        </p>
-      </details>
-
-      <!-- Pregunta 7 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Qué pasa si necesito cancelar una cita?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Puedes cancelar o reagendar tu sesión avisando con al menos
-          <strong>12 horas de anticipación</strong> para respetar el tiempo del
-          terapeuta y mantener una agenda ordenada.
-        </p>
-      </details>
-
-      <!-- Pregunta 8 -->
-      <details
-        class="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-sm transition-all hover:shadow-md"
-      >
-        <summary
-          class="font-semibold text-purple-400 cursor-pointer flex justify-between items-center"
-        >
-          ¿Puedo elegir a mi psicóloga?
-          <span class="transition-transform group-open:rotate-180">⌄</span>
-        </summary>
-        <p class="mt-2 text-gray-700 leading-relaxed">
-          Sí. Puedes revisar nuestro
-          <a href="#psicologos" class="text-purple-600 font-medium underline"
-            >equipo de psicólogas</a
-          >
-          y elegir con quién te sientas más cómodo o cómoda.
-        </p>
-      </details>
+    <div class="mt-10 rounded-3xl border border-teal-100 bg-teal-50/70 p-6 text-center">
+      <p class="text-gray-700">¿No encontraste tu respuesta?</p>
+      <a href="#contacto" class="mt-3 inline-flex rounded-full bg-teal-600 px-6 py-2.5 font-semibold text-white transition duration-200 hover:bg-teal-700">
+        Hablar con Soul Space
+      </a>
     </div>
   </div>
 </section>
